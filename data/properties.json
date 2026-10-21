@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "slug": "capital-house-lewisham",
+    "title": "Capital House Lewisham",
+    "category": "Office / Retail",
+    "location": "Lewisham, London",
+    "address": "47 Rushey Green, Lewisham, London SE6 4AS",
+    "size": "1,220 to 23,867 sq ft",
+    "suitableFor": "Suitable for Offices, Retail, Showroom",
+    "price": "£28.50 per sq ft / annum",
+    "tenure": "Flexible Lease Terms (3 - 10 Years)",
+    "status": "Available Immediately",
+    "epc": "B (42)",
+    "image": "/images/properties/capital-house.jpg",
+    "description": "Capital House is a prominent landmark commercial building located in the vibrant centre of Lewisham, offering flexible office suites and ground-floor retail showroom space. Recently refurbished to top commercial standards, the building combines modern open-plan floors with excellent natural light, dedicated lift access, and comprehensive infrastructure suitable for corporate headquarters, professional practices, and high-visibility retail operators.",
+    "features": [
+      "Prominent high street frontage with exceptional footfall",
+      "DDA compliant with passenger lift servicing all floors",
+      "High-speed Cat 6 data cabling and fibre connectivity ready",
+      "Energy-efficient modern air-conditioning and heating",
+      "Dedicated secure basement and surface parking spaces",
+      "Modern kitchenettes and restrooms on every floor",
+      "24/7 keycard access with CCTV security monitoring",
+      "Floor-to-ceiling double-glazed windows throughout"
+    ],
+    "highlights": [
+      { "label": "Available Space", "value": "1,220 - 23,867 sq ft" },
+      { "label": "Use Class", "value": "Class E (Commercial, Business & Service)" },
+      { "label": "Transport", "value": "5 min walk to Lewisham Overground & DLR" },
+      { "label": "Floor Configuration", "value": "Subdivisible from 1,220 sq ft" }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "belvedere-da17-6an-mulberry-way",
+    "title": "Belvedere DA17 6AN Mulberry Way",
+    "category": "Industrial",
+    "location": "Belvedere, DA17 6AN",
+    "address": "Mulberry Way, Belvedere Industrial Estate, Greater London DA17 6AN",
+    "size": "5,000 to 24,000 sq ft",
+    "suitableFor": "Warehouse / Yard / Industrial Use",
+    "price": "£16.50 per sq ft / annum",
+    "tenure": "Flexible Short & Long Term Lease",
+    "status": "Available Immediately",
+    "epc": "C (65)",
+    "image": "/images/properties/belvedere.jpg",
+    "description": "Situated within the strategically connected Belvedere Industrial Estate, this prime logistics, warehouse and yard facility offers superb versatility for commercial distribution and industrial operators. With generous eaves height, heavy floor loading capacities, and expansive hardstanding yard space for heavy goods vehicle turning and external storage, this property delivers ideal logistics efficiency with immediate connectivity to the A2016 and M25 corridor.",
+    "features": [
+      "Generous 7.2m clear eaves height throughout warehouse area",
+      "Multiple full-height electrically operated roller shutter doors",
+      "3-phase heavy industrial power supply (up to 400 kVA capacity)",
+      "Secure fenced and gated concrete yard with turning circle for HGVs",
+      "Integrated two-storey modern ancillary offices and welfare facilities",
+      "Unrestricted 24/7 operating hours and site access",
+      "Fibre optic broadband connectivity installed",
+      "Energy efficient high-bay LED lighting throughout"
+    ],
+    "highlights": [
+      { "label": "Warehouse Space", "value": "5,000 - 24,000 sq ft" },
+      { "label": "Yard Area", "value": "Up to 0.75 acres optional yard" },
+      { "label": "Eaves Height", "value": "7.2m clear height" },
+      { "label": "Power Supply", "value": "3-Phase 400 kVA" }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "epping-commercial-complex",
+    "title": "Epping Commercial Complex",
+    "category": "Commercial",
+    "location": "Epping, London",
+    "address": "High Road, Epping, Greater London CM16 4BD",
+    "size": "17,000 to 19,000 sq ft",
+    "suitableFor": "Office, Showroom, Workshop & Storage",
+    "price": "Price on Application",
+    "tenure": "New FRI Lease Available",
+    "status": "Available Immediately",
+    "epc": "B (38)",
+    "image": "/images/properties/epping.jpg",
+    "description": "Epping Commercial Complex is a premier multi-purpose commercial business park accommodating administrative offices, client-facing showrooms, and spacious workshop/storage facilities under one roof. Ideal for trade counters, design studios, light assembly, or expanding regional hubs seeking high quality premises with extensive dedicated parking and seamless transport connections into Central London via the Central Line.",
+    "features": [
+      "Versatile combined configuration: executive offices + showroom + storage",
+      "Extensive dedicated customer and staff parking (over 45 bays)",
+      "Fully gated and secure perimeter with round-the-clock CCTV",
+      "Comfort-cooling in office suites and high-bay lighting in storage",
+      "Short walking distance to Epping Tube Station (London Underground Central Line)",
+      "Dedicated loading and dispatch apron with level access",
+      "On-site property management and maintained landscaping",
+      "Ultra-fast gigabit fibre broadband infrastructure"
+    ],
+    "highlights": [
+      { "label": "Total Area", "value": "17,000 - 19,000 sq ft" },
+      { "label": "Parking", "value": "45+ Dedicated vehicle bays" },
+      { "label": "Transit", "value": "Central Line Underground connection" },
+      { "label": "Lease Type", "value": "Full Repairing & Insuring (FRI)" }
+    ]
+  }
+]
