@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MapPin, Building2, ShieldCheck } from "lucide-react";
 import Button from "@/components/Button";
 
-const HERO_IMAGE = "/images/hero.jpg";
+const HERO_IMAGE = "/images/hero1.jpg";
 
 const features = [
   { icon: MapPin, title: "Prime Locations", text: "Across London" },
@@ -23,28 +23,22 @@ export default function HeroSection() {
         className="-z-20 object-cover object-[70%_center] lg:object-center"
       />
 
-      {/* White fade from left so text stays readable */}
+      {/* Dark fade overlay so white text stays readable */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-white via-white/85 to-white/10 lg:via-white/70 lg:to-transparent"
-      />
-
-      {/* Soft fade at bottom */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-gradient-to-t from-white/90 to-transparent"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-black/30 via-black/20 to-black/10"
       />
 
       {/* Full-height flex container, centered */}
       <div className="relative mx-auto flex min-h-[640px] max-w-7xl flex-col items-center justify-center px-5 py-16 sm:px-8 lg:min-h-[760px] lg:py-24">
         {/* Inner block: max-w-7xl, centered, content left-aligned */}
         <div className="flex w-full max-w-7xl flex-col items-start">
-          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-[#14213d] sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-black sm:text-5xl lg:text-6xl">
             Commercial Property <br />Solutions in{" "}
             <span className="text-[#4a8c26]">London</span>
           </h1>
 
-          <p className="mt-7 max-w-4xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+          <p className="mt-7 max-w-4xl text-base leading-7 text-white sm:text-lg sm:leading-8">
             Flexible short and long term commercial property solutions for
             businesses of all sizes. Offices, retail units, industrial spaces
             and investment opportunities across prime London locations.
@@ -53,7 +47,7 @@ export default function HeroSection() {
           <div className="mt-9">
             <Button
               name="View Properties"
-              url="/commercial"
+              url="/properties"
               variant="fill"
               size="lg"
             />
@@ -68,10 +62,10 @@ export default function HeroSection() {
                   i !== 0 ? "sm:border-l sm:border-gray-300 sm:pl-8" : ""
                 } ${i !== features.length - 1 ? "sm:pr-8" : ""}`}
               >
-                <Icon size={38} strokeWidth={1.5} className="shrink-0 text-[#14213d]" />
+                <Icon size={38} strokeWidth={1.5} className="shrink-0 text-white" />
                 <div className="text-left">
-                  <p className="text-base font-bold text-[#14213d]">{title}</p>
-                  <p className="text-sm text-slate-600">{text}</p>
+                  <p className="text-base font-bold text-white">{title}</p>
+                  <p className="text-sm text-white/80">{text}</p>
                 </div>
               </div>
             ))}

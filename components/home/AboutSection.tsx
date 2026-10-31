@@ -3,7 +3,7 @@ import { Building2, Handshake, Users } from "lucide-react";
 import Button from "@/components/Button";
 
 // Image yaha rakho: public/images/about.jpg
-const ABOUT_IMAGE = "/images/about.jpg";
+const ABOUT_IMAGE = "/images/Street-View.jpeg";
 
 const features = [
   {

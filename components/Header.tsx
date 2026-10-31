@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
@@ -9,26 +10,21 @@ import Button from "@/components/Button";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Commercial", href: "/commercial" },
-  { name: "Offices", href: "/offices" },
-  { name: "Retail", href: "/retail" },
+  { name: "Properties", href: "/properties" },
   { name: "Contact", href: "/contact" },
 ];
 
 function Logo() {
   return (
     <Link href="/" className="flex items-center gap-3">
-      {/* Icon: grey ring + green "H" (pure Tailwind) */}
-      <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-[5px] border-gray-300">
-        <span className="relative block h-5 w-5">
-          <span className="absolute left-0 top-0 h-full w-[5px] rounded-sm bg-[#5aa02c]" />
-          <span className="absolute right-0 top-0 h-full w-[5px] rounded-sm bg-[#5aa02c]" />
-          <span className="absolute left-0 top-1/2 h-[5px] w-full -translate-y-1/2 bg-[#4a8c26]" />
-        </span>
-      </span>
-      <span className="text-lg font-bold tracking-tight text-[#14213d] sm:text-xl">
-        Hanif Properties London
-      </span>
+      <Image
+        src="/hanif-logo.png"
+        alt="Hanif Properties London"
+        width={180}
+        height={48}
+        priority
+        className="h-10 w-auto sm:h-16"
+      />
     </Link>
   );
 }

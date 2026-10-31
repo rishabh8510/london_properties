@@ -5,7 +5,8 @@ import Button from "@/components/Button";
 import properties from "@/data/properties.json";
 import type { Property } from "@/types/property";
 
-const data = properties as Property[];
+// Display only the top 3 properties in order of importance on the home page
+const data = (properties as Property[]).slice(0, 3);
 
 export default function FeaturedProperties() {
   return (
@@ -17,7 +18,7 @@ export default function FeaturedProperties() {
             Featured Properties
           </h2>
           <Link
-            href="/commercial"
+            href="/properties"
             className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-[#4a8c26] underline underline-offset-4 hover:text-[#3d751f] sm:text-base"
           >
             View All Properties
@@ -70,7 +71,7 @@ export default function FeaturedProperties() {
 
                 <Button
                   name="View Details"
-                  url={`/commercial/${property.slug}`}
+                  url={`/properties/${property.slug}`}
                   variant="not-fill"
                   size="sm"
                   className="mt-6"

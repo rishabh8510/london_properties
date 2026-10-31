@@ -1,21 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import type { ReactNode } from "react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Commercial", href: "/commercial" },
-  { name: "Offices", href: "/offices" },
-  { name: "Retail", href: "/retail" },
+  { name: "Properties", href: "/properties" },
   { name: "Contact", href: "/contact" },
 ];
 
 const propertyTypes = [
-  { name: "Office Spaces", href: "/offices" },
-  { name: "Retail Units", href: "/retail" },
-  { name: "Industrial Spaces", href: "/commercial?type=industrial" },
-  { name: "Investment Opportunities", href: "/commercial?type=investment" },
+  { name: "All Properties", href: "/properties" },
+  { name: "Commercial Spaces", href: "/properties?filter=commercial" },
+  { name: "Office Spaces", href: "/properties?filter=offices" },
+  { name: "Retail Units", href: "/properties?filter=retail" },
 ];
 
 const contactInfo = [
@@ -79,21 +78,16 @@ const socials: { name: string; href: string; icon: ReactNode }[] = [
 
 function Logo() {
   return (
-    <Link href="/" className="inline-flex items-center gap-3">
-      <span className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[5px] border-gray-300">
-        <span className="relative block h-5 w-5">
-          <span className="absolute left-0 top-0 h-full w-[5px] rounded-sm bg-[#5aa02c]" />
-          <span className="absolute right-0 top-0 h-full w-[5px] rounded-sm bg-[#5aa02c]" />
-          <span className="absolute left-0 top-1/2 h-[5px] w-full -translate-y-1/2 bg-[#4a8c26]" />
-        </span>
-      </span>
-      <span className="flex flex-col leading-tight">
-        <span className="text-lg font-bold tracking-tight text-[#14213d] sm:text-xl">
-          Hanif Properties London
-        </span>
-        <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-slate-400 sm:text-[11px]">
-          Commercial Property Solutions
-        </span>
+    <Link href="/" className="inline-flex flex-col gap-3">
+      <Image
+        src="/hanif-logo.png"
+        alt="Hanif Properties London"
+        width={200}
+        height={56}
+        className="h-12 w-auto sm:h-14"
+      />
+      <span className="text-[10px] font-medium uppercase tracking-[0.12em] text-slate-400 sm:text-[11px]">
+        Commercial Property Solutions
       </span>
     </Link>
   );

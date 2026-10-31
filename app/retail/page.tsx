@@ -4,27 +4,29 @@ import properties from "@/data/properties.json";
 import type { Property } from "@/types/property";
 
 export const metadata: Metadata = {
-  title: "Retail Units & Shops to Let in London | Hanif Properties",
+  title: "Rental Properties & Retail Units in London | Hanif Properties",
   description:
-    "Prime retail units, high street shops, and commercial showrooms available across London. High footfall locations with versatile floor layouts.",
+    "Prime rental properties, retail units, high street shops, and commercial showrooms available across London. High footfall locations with versatile floor layouts.",
 };
 
 export default function RetailPage() {
-  const retailProperties = (properties as Property[]).filter(
+  const rentalProperties = (properties as Property[]).filter(
     (p) =>
+      p.category.toLowerCase().includes("rental") ||
       p.category.toLowerCase().includes("retail") ||
+      p.suitableFor.toLowerCase().includes("rental") ||
       p.suitableFor.toLowerCase().includes("retail") ||
       p.suitableFor.toLowerCase().includes("showroom")
   );
 
   return (
     <PropertyListingsPage
-      badge="Retail Portfolio"
-      title="Retail Units & Commercial Shops in London"
-      description="Explore high-visibility retail units, high-street shops, and premium showroom spaces located in thriving commercial and shopping districts across London."
-      properties={retailProperties}
+      badge="Rental Portfolio"
+      title="Rental Properties & Units in London"
+      description="Explore prime rental properties, retail spaces, high-street units, and commercial showrooms located in thriving districts across London."
+      properties={rentalProperties}
       basePath="/retail"
-      emptyMessage="No retail units currently available. Please check back soon or contact our commercial team."
+      emptyMessage="No rental units currently available. Please check back soon or contact our commercial team."
     />
   );
 }

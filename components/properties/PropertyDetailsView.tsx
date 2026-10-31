@@ -157,7 +157,7 @@ export default function PropertyDetailsView({
                   Property Overview
                 </h2>
               </div>
-              <p className="text-base leading-8 text-slate-700">
+              <p className="text-base leading-8 text-slate-700 whitespace-pre-line">
                 {property.description}
               </p>
             </section>
@@ -334,7 +334,7 @@ export default function PropertyDetailsView({
             </div>
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-              {otherProperties.map((other) => (
+              {otherProperties.slice(0, 2).map((other) => (
                 <article
                   key={other.id}
                   className="flex flex-col sm:flex-row overflow-hidden rounded-sm bg-white shadow-sm border border-gray-200 hover:shadow-md transition-shadow"
